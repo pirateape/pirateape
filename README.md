@@ -12,6 +12,7 @@ No SaaS. No exfiltration. No licensing traps — just a binary, your terminal, a
 | Project | Description | Stack |
 |---|---|---|
 | **[ApeGuard][apeguard]** | One-command local security audit — 5 scanner layers, ZT mapping, multi-format reports | Rust · CLI · MCP |
+| **[Azure Security][azure]** | 100+ KQL queries, PowerShell audits, Azure Policies, Bicep baselines, Sentinel workbooks & playbooks | KQL · PowerShell · ARM |
 | **[UZTF][uztf]** | The Unified Zero Trust Framework — 8-pillar maturity model that extends CISA ZTMM with quantitative scoring | Spec · YAML · Kyōto |
 
 > `brew install apeguard` → finds **secrets**, **vulns**, **misconfigs**, and **attack chains** in your codebase.  
@@ -41,8 +42,8 @@ apeguard run --dir . --report md
 ### 🔗 Links
 
 [![ApeGuard][badge-apeguard]][apeguard]
+[![Azure Security][badge-azure]][azure]
 [![UZTF][badge-uztf]][uztf]
-[![Homebrew][badge-brew]][tap]
 
 ---
 
@@ -52,17 +53,17 @@ apeguard run --dir . --report md
 <br>
 
 ```
-▲   ApeGuard     — Rust security scanner      ▲ 131 tests · 0 warnings · v0.1.0
-▲   UZTF         — Zero Trust Framework       ▲ Released v1.0 · CISA-aligned
-▲   homebrew-tap — ApeGuard Homebrew formula   ▲ SHA-256 pinned · auto-updated
+▲   ApeGuard         — Rust security scanner        ▲ 131 tests · 0 warnings · v0.1.0
+▲   Azure Security   — Azure defense-in-depth       ▲ 45 KQL · 35 PS1 · 14 policies · 7 alert rules
+▲   UZTF             — Zero Trust Framework         ▲ Released v1.0 · CISA-aligned
 ```
 
 </details>
 
 [apeguard]: https://github.com/pirateape/ape-guard
+[azure]: https://github.com/pirateape/Azure-Security
 [uztf]: https://github.com/pirateape/unified-zero-trust-framework
-[tap]: https://github.com/pirateape/homebrew-tap
 
 [badge-apeguard]: https://img.shields.io/badge/ApeGuard-FF6B35?style=flat-square&logo=rust&logoColor=white
+[badge-azure]: https://img.shields.io/badge/Azure_Security-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white
 [badge-uztf]: https://img.shields.io/badge/UZTF-1A1A2E?style=flat-square&logo=letsencrypt&logoColor=white
-[badge-brew]: https://img.shields.io/badge/Homebrew-FBB040?style=flat-square&logo=homebrew&logoColor=black
